@@ -14,7 +14,8 @@ namespace cSharpGregslist.Controllers
     {
       _cs = cs;
     }
-         [HttpGet]
+    
+    [HttpGet]
     public ActionResult<IEnumerable<Car>> Get()
     {
      try
