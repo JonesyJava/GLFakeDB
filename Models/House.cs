@@ -17,23 +17,28 @@ namespace cSharpGregslist.Models
     }
 
 
-[Required]    
-public int Bedrooms { get; set; }
-[Required]
+        [Required]    
+        public int Bedrooms { get; set; }
+
+        [Required]
         public int Bathrooms { get; set; }
+
         [Required]
         public int Year { get; set; }
+
         [Required]
         public int Price { get; set; }
+
         [Required]
         public int Levels { get; set; }
+
         [Required]
         public string Description { get; set; }
-        [Required]
 
-        public string Url { get; set; }
         [Required]
-
+         public string Url { get; set; }
+        
+        [Required]
         public string Id { get; set; } = Guid.NewGuid().ToString();
     }
 }
