@@ -11,7 +11,11 @@ namespace cSharpGregslist.Services
         {
             return FakeDB.Cars;
         }
-         public Car GetCarById(string carId)
+
+
+        
+        
+        public Car GetCarById(string carId)
          {
              Car foundCar = FakeDB.Cars.Find(c => c.Id == carId);
              if(foundCar != null)
@@ -20,7 +24,10 @@ namespace cSharpGregslist.Services
              }
               throw new SystemException("This id is invalid");
          }
-         public Car Create(Car createdCar)
+        
+
+
+        public Car Create(Car createdCar)
          {
         FakeDB.Cars.Add(createdCar);
         return createdCar;
